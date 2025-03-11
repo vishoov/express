@@ -1,0 +1,17 @@
+{
+  "name": "routing-in-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev":"nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Vishoo AccioJob",
+  "license": "ISC",
+  "description": "This project is for acciojob",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}

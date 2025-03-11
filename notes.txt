@@ -1,0 +1,54 @@
+
+Full stack
+front end - react 
+backend - server node 
+
+Backend -> API Design
+
+create a live server 
+localhost:3000
+locally on      port number  
+my system (host)
+http protocol -> IP address 
+
+
+ROUTING IN EXPRESS JS
+
+EXPRESS JS IS A TECHNOLOGY FOR DESIGNING API'S 
+EXPRESS HELPS IN MAKING APIS SCALABLE AND SECURE 
+
+
+localhost:3000/home
+localhost:3000/signup 
+localhost:3000/login
+
+
+
+Node Js environment 
+
+
+1. npm init -y -> initialises the node package manager (npm)
+
+
+
+EXPRESS.Js
+
+1. npm install express 
+
+
+
+chat gpt -> app that uses chat gpt 
+
+
+
+to implement index.js 
+we do 
+node index.js
+
+to implent this as a node js project 
+-> npm run dev or npm run start
+
+
+npm install nodemon  -> nodemon is a technology that helps us in automatically saving
+changes to our server and restarting whenever needed
+

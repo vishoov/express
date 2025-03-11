@@ -52,3 +52,25 @@ to implent this as a node js project
 npm install nodemon  -> nodemon is a technology that helps us in automatically saving
 changes to our server and restarting whenever needed
 
+
+HTTP Communication
+
+get -> recieve on server -> server handles it -> it responds 
+
+
+JSON Format
+header:{
+    technical specification 
+}
+body:{
+    details
+}
+
+
+route-> objects -> request header, 
+
+
+benefits of express
+
+we can treat request and response as objects
+then we have their methods, to interact with them 

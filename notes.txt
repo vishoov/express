@@ -74,3 +74,79 @@ benefits of express
 
 we can treat request and response as objects
 then we have their methods, to interact with them 
+
+
+// npm -> node package manager
+//npm run -> run the script
+//npm run dev -> run the dev script
+
+
+middlewares
+MVC Architecture
+API-> RESTFUL API
+
+databases
+
+
+RESTFUL -> REPRESENTATIONAL STATE TRANSFER 
+
+scalable, reliable, secure, fast 
+
+100 -> >1000-10000 -> crash 
+
+
+
+Middlewares are functions that are implemented before any route is handled
+after recieving the request
+
+
+req-> middleware-> handler functions
+
+1. app.use(middleware) ->  routes written after this app.use would by default implement this middleware
+2. const middleware = (req, res, next)=>{} 
+app.method("/route", middleware, callback handler)
+
+
+Pre Built
+    -> app.use(express.json()) -> to parse json files
+    -> urlencoded -> url encoding support
+    -> package specific -> jwt, cors security
+
+Custom ->
+    - logging -> printing the details of the req that the server has received
+    - security/authentication -> secures the routes -> protected routes
+
+
+HOW EXACTLY TO STRUCTURE OUR APPLICATION
+
+
+javascript -> interpretor based -> line by line -> until there is no more code or error
+
+100 features -> AI, analytics, prediction, storage, db, authentication
+
+100 features' code -> run 
+
+
+
+writing all code inside index.js ->
+would slow our server
+it will have to render or run all the code even if it is not being used
+
+this does not look professional 
+
+readable, understandable 
+
+
+efficient -> code on demand 
+
+scalable
+
+secure
+
+reliable
+
+MVC Architecture
+
+Model -> data format -> signup -> name, age, phone, address, height, weight, role, username 
+View -> routes  
+Controller -> handler functions 

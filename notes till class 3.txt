@@ -150,3 +150,33 @@ MVC Architecture
 Model -> data format -> signup -> name, age, phone, address, height, weight, role, username 
 View -> routes  
 Controller -> handler functions 
+
+
+
+DATABASES
+
+2 types->
+SQL based  -> Structured Query Language 
+    FIXED type of datab based
+    user = { name, age, phone }
+
+    TABLES format 
+    user table, reviews table, order table 
+
+    fast 
+
+    very very high load application ex google, amazon, instagram, microsoft
+
+NoSQL based -> No Structure 
+
+    no tables, felxible 
+
+    json -> Objects-> key:value
+
+    startups, unicrons, new companies 
+
+
+    MongoDB
+    
+
+

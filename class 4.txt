@@ -1,0 +1,102 @@
+DATABASES
+
+MongoDB
+
+CRUD Operations
+Create Read Update Delete
+
+HTTP methods
+GET, PUT, POST, PATCH, DELETE
+
+
+Routes -> CRUD -> database functions 
+
+
+Document Data Model 
+
+JSON-like format -> key, value 
+
+-felxible
+-fields can be different inside a database as well
+- this structure is most compatible with most tech stacks
+
+
+MongoDB -> DATABASE
+
+Collections-> group of mongoDB documents   -> products, users, reviews, orders, sellers 
+
+Document -> single user's information 
+
+Field -> key value pairs 
+
+
+fast read and write speeds 
+
+SQL -> user search -> table linear search
+NoSQL-> collection query 
+
+name-> sql name, table, output
+
+
+no sql-> find({name:"Vishoo"})
+
+Schemaless -> multiple collections, multiple kind of information 
+
+Scalability is very high 
+
+(sharding) 
+
+
+
+Mongo Shell
+
+1. show dbs -> to list the available databases in your local system
+
+2. use db -> either switches to the db if it exist, or created a new db with the specified name
+
+3. db.createCollection("trial")  creates a collection named trial
+
+CREATE command 
+4. db.collectionName.insertOne({object that needs to be stored}) -> insert a single object
+   db.collectionName.insertMany(                    -> to insert multiple objects
+    [
+        {},
+        {},
+        {}
+    ]
+   )
+
+   -> mongoshell commands -> mongoose (driver) -> features
+
+5. READ ->
+    db.collectionName.find() -> sari queries leke ayega
+    db.collectionName.findOne() -> single top object leke ayega
+
+    find()-> we write queries 
+
+
+    db.trial.find({field:value})
+
+    COMPARISON OPERATORS
+
+        - db.trial.find({ age :  { $lt: 100 }})  -> less than 100
+        - $lte -> less than or equal to
+        - $gt -> greater than
+        - $gte -> greate than or equal to 
+        - $ne -> not equal  
+
+
+        2 conditions and both should be followed -> LOGICAL OPERATORS
+
+        (condition1 AND condition2) -> return
+
+        db.trial.find({$and : [{condition1}, {condition2}]})
+        db.trial.find({$or:[{cond1}, {cond2}]})
+
+
+3. Update
+
+db.trial.updateOne({name:"B"}, {$set:{age:30}})
+db.trial.updateOne({this would contain the query through which we will find the document}, {$set:{updated fields }})
+
+ 
